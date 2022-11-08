@@ -4,6 +4,7 @@ function startHere(){
   widgets = parseInt(widgets)
   widgets = widgets + 1;
   document.getElementById("widgets").innerHTML = widgets;
+  shouldShow();
 }
 function shouldShow(){
   if(widgets >= 50){
