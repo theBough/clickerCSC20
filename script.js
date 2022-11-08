@@ -5,3 +5,8 @@ function startHere(){
   widgets = widgets + 1;
   document.getElementById("widgets").innerHTML = widgets;
 }
+function shouldShow(){
+  if(widgets >= 50){
+    document.getElementById("secondBtn").removeAttribute("hidden")
+  }
+}
