@@ -18,5 +18,7 @@ function buttonTwo(){
   //dbl the click rate
   widgets = parseInt(widgets);
   widgets = widgets - 50;
+  document.getElementById("widgets").innerHTML = widgets;
   rate = rate * 2
+  document.getElementById("secondBtn").style.visibility = "hidden";
 }
