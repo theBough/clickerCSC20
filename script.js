@@ -1,5 +1,6 @@
 var widgets = document.getElementById("widgets").innerHTML;
 var secondBtn = document.getElementById("secondBtn")
+var thirdBtn = document.getElementById("thirdBtn")
 var rate = 1;
 function startHere(){
   widgets = parseInt(widgets)
@@ -12,6 +13,9 @@ function shouldShow(){
   //When they do we show another button
   if(widgets >= 50){
     secondBtn.style.visibility = "visible";     
+  }
+  if(widgets>=200){
+    thirdBtn.style.visibility = "visible";
   }
 }
 function buttonTwo(){
