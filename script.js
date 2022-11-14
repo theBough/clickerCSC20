@@ -1,4 +1,5 @@
 var widgets = document.getElementById("widgets").innerHTML;
+var secondBtn = document.getElementById("secondBtn")
 var rate = 1;
 function startHere(){
   widgets = parseInt(widgets)
@@ -10,7 +11,7 @@ function shouldShow(){
   //This will detect if the user has 50 widgets
   //When they do we show another button
   if(widgets >= 50){
-    document.getElementById("secondBtn").removeAttribute("hidden")
+    secondBtn.style.visibility = "visible";     
   }
 }
 function buttonTwo(){
@@ -20,5 +21,5 @@ function buttonTwo(){
   widgets = widgets - 50;
   document.getElementById("widgets").innerHTML = widgets;
   rate = rate * 2
-  document.getElementById("secondBtn").style.visibility = "hidden";
+  secondBtn.style.visibility = "hidden";
 }
