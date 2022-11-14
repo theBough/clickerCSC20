@@ -8,9 +8,19 @@ html, body {
 button{
   background-color: #2f3e46;
   font-size: 24px;
-  border-radius:8px
+  border-radius:8px;
 }
 button:hover{
    background-color: #CAD2C5;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:active{
+  transform: translateY(4px);
+}
+img{
+  width:100px;
+  height:100px;
+}
+#secondBtn{
+  visibility: hidden;
 }
