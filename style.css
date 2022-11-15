@@ -1,38 +1,29 @@
-var widgets = document.getElementById("widgets").innerHTML;
-var secondBtn = document.getElementById("secondBtn")
-var thirdBtn = document.getElementById("thirdBtn")
-var rate = 1;
-function startHere(){
-  widgets = parseInt(widgets)
-  widgets = widgets + rate;
-  document.getElementById("widgets").innerHTML = widgets;
-  shouldShow();
+html, body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #84A98C;
+  color:#CAD2C5;
 }
-function shouldShow(){
-  //This will detect if the user has 50 widgets
-  //When they do we show another button
-  if(widgets >= 50){
-    secondBtn.style.visibility = "visible";     
-  }
-  if(widgets>=200){
-    thirdBtn.style.visibility = "visible";
-  }
+button{
+  background-color: #2f3e46;
+  font-size: 24px;
+  border-radius:8px;
 }
-function buttonTwo(){
-  //take away 50 widgets
-  //dbl the click rate
-  widgets = parseInt(widgets);
-  widgets = widgets - 50;
-  document.getElementById("widgets").innerHTML = widgets;
-  rate = rate * 2
-  secondBtn.style.visibility = "hidden";
+button:hover{
+   background-color: #CAD2C5;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-function buttonThree(){
-  //take away 50 widgets
-  //dbl the click rate
-  widgets = parseInt(widgets);
-  widgets = widgets - 200;
-  document.getElementById("widgets").innerHTML = widgets;
-  rate = rate * 3
-  thirdBtn.style.visibility = "hidden";
+button:active{
+  transform: translateY(4px);
+}
+img{
+  width:100px;
+  height:100px;
+}
+#secondBtn{
+  visibility: hidden;
+}
+#thirdBtn{
+  visibility: hidden;
 }
