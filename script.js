@@ -27,3 +27,12 @@ function buttonTwo(){
   rate = rate * 2
   secondBtn.style.visibility = "hidden";
 }
+function buttonThree(){
+  //take away 50 widgets
+  //dbl the click rate
+  widgets = parseInt(widgets);
+  widgets = widgets - 200;
+  document.getElementById("widgets").innerHTML = widgets;
+  rate = rate * 3
+  thirdBtn.style.visibility = "hidden";
+}
